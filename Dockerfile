@@ -1,11 +1,8 @@
-FROM jupyter/base-notebook
+FROM jupyterhub/singleuser:1.2
+
 MAINTAINER Hannes Moser <box@hannesmoser.at>
 
-ADD install_jupyterhub /tmp/install_jupyterhub
-ARG JUPYTERHUB_VERSION=1.2
-# install pinned jupyterhub and ensure notebook is installed
-RUN python3 /tmp/install_jupyterhub && \
-    python3 -m pip install \
+RUN python3 -m pip install \
         notebook \
         numpy \
         pandas
