@@ -5,4 +5,6 @@ MAINTAINER Hannes Moser <box@hannesmoser.at>
 RUN python3 -m pip install \
         notebook \
         numpy \
-        pandas
+        pandas \
+        matplotlib \
+        seaborn
