@@ -7,4 +7,5 @@ RUN python3 -m pip install \
         numpy \
         pandas \
         matplotlib \
-        seaborn
+        seaborn \
+        psycopg2-binary
