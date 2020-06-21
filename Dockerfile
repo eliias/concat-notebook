@@ -5,7 +5,8 @@ MAINTAINER Hannes Moser <box@hannesmoser.at>
 RUN python3 -m pip install \
         notebook \
         numpy \
-        pandas \
         matplotlib \
+        pandas \
+        psycopg2-binary \
         seaborn \
-        psycopg2-binary
+        sklearn
